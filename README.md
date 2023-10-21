@@ -1,6 +1,6 @@
 ![Local Image](./dream-cover.jpg)
 
-Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We are a group of six enthusiastic girls who are passionate about learning and sharing knowledge in the world of coding.
+Welcome to the **Dream** team's README! We are a group of six enthusiastic girls who are passionate about learning and sharing knowledge in the world of coding.
 
 ## Meet the Team
 
@@ -10,7 +10,7 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
   - :star2: **Favorite Topic:** ***example*** - *Reason*
   - :plate_with_cutlery: **Favorite Food:** 
 
-- Member 2: Nasra Hussein
+- **Nasra Hussein**
   - :octocat: **GitHub:** [@NasraHussein3](https://github.com/NasraHussein3)
   - :thought_balloon: **Why I'am Doing the Course:** *I love everything Front-end web development and I know CFG will help me excelle in this*
   - :star2: **Favorite Topic:** ***Javascript*** 
@@ -36,9 +36,9 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
 
 - **Remi - Rongrong**
   - :octocat: **GitHub:** [@sherlkk](https://github.com/sherlkk)
-  - :thought_balloon: **Why I'am Doing the Course:** *I'm...*
-  - :star2: **Favorite Topic:** ***Machine Learning*** - *We love exploring the endless possibilities.*
-  - :plate_with_cutlery: **Favorite Food:** *Potato* :potato: *Ice Cream* :ice_cream: *Chips* :fries: Popcorn :popcorn:
+  - :thought_balloon: **Why I'am Doing the Course:** * I believe that in our rapidly advancing digital world, coding is the key to unlocking limitless opportunities for problem-solving, creativity, and making a positive impact on society.*
+  - :star2: **Favorite Topic:** ***Machine Learning*** - *I love exploring the endless possibilities.*
+  - :plate_with_cutlery: **Favorite Food:** *Potato* :potato: *Ice Cream* :ice_cream: *Chips* :fries: *Popcorn* :popcorn:
 
 ## Our Focus
 
