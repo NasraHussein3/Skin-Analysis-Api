@@ -36,7 +36,7 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
 
 - **Remi - Rongrong**
   - :octocat: **GitHub:** [@sherlkk](https://github.com/sherlkk)
-  - :thought_balloon: **Why I'am Doing the Course:** * I believe that in our rapidly advancing digital world, coding is the key to unlocking limitless opportunities for problem-solving, creativity, and making a positive impact on society.*
+  - :thought_balloon: **Why I'am Doing the Course:** *I believe that in our rapidly advancing digital world, coding is the key to unlocking limitless opportunities for problem-solving, creativity, and making a positive impact on society.*
   - :star2: **Favorite Topic:** ***Machine Learning*** - *I love exploring the endless possibilities.*
   - :plate_with_cutlery: **Favorite Food:** *Potato* :potato: *Ice Cream* :ice_cream: *Chips* :fries: *Popcorn* :popcorn:
 
