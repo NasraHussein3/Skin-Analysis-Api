@@ -1,10 +1,10 @@
-![Local Image](./images/dream-cover.jpg)
+![Local Image](./dream-cover.jpg)
 
 Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We are a group of six enthusiastic girls who are passionate about learning and sharing knowledge in the world of coding.
 
 ## Meet the Team
 
-- Member 1: Name
+- **Name**
   - :octocat: **GitHub:** [GitHub Profile](URL)
   - :thought_balloon: **Why I'am Doing the Course:** *I believe...*
   - :star2: **Favorite Topic:** ***example*** - *Reason*
@@ -16,25 +16,25 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
   - :star2: **Favorite Topic:** ***Javascript*** 
   - :plate_with_cutlery: **Favorite Food:** *Concrete cake with custard*
 
-- Member 3: Name
+- **Name**
   - :octocat: **GitHub:** [GitHub Profile](URL)
   - :thought_balloon: **Why I'am Doing the Course:** *Because...*
   - :star2: **Favorite Topic:** ***example*** - *Reason*
   - :plate_with_cutlery: **Favorite Food:**
 
-- Member 4: Name
+- **Name**
   - :octocat: **GitHub:** [GitHub Profile](URL)
   - :thought_balloon: **Why I'am Doing the Course:** *...*
   - :star2: **Favorite Topic:** ***example*** - *Reason*
   - :plate_with_cutlery: **Favorite Food:** 
 
-- Member 5: Name
+- **Name**
   - :octocat: **GitHub:** [GitHub Profile](URL)
   - :thought_balloon: **Why I'am Doing the Course:** *I believe...*
   - :star2: **Favorite Topic:** ***example*** - *Reason*
   - :plate_with_cutlery: **Favorite Food:**
 
-- Member 6: Remi - Rongrong
+- **Remi - Rongrong**
   - :octocat: **GitHub:** [@sherlkk](https://github.com/sherlkk)
   - :thought_balloon: **Why I'am Doing the Course:** *I'm...*
   - :star2: **Favorite Topic:** ***Machine Learning*** - *We love exploring the endless possibilities.*
