@@ -10,10 +10,10 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
 - **Favorite Topic:** <span style="color: #c5a2c9;">***Machine Learning***</span> - *We love exploring the endless possibilities.*
 - **Favorite Food:** *Sushi* 🍣 *Ice Cream* 🍦 *Chips* 🍟 
 
-### Member 2: [Name]
-- **GitHub:** [GitHub Profile](URL)
-- **Why I'am Doing the Course:** *Learning is...*
-- **Favorite Topic:** <span style="color: #c5a2c9;">***AI***</span> - *The future is AI-driven.*
+### Member 2: [Nasra Hussein]
+- **GitHub:** [[GitHub Profile](URL](https://github.com/NasraHussein3))
+- **Why I'am Doing the Course:** *I love everything Front-end web development and I know CFG will help me excelle in this *
+- **Favorite Topic:** <span style="color: #c5a2c9;">***Javascript***</span> - *The future is AI-driven.*
 - **Favorite Food:** 
 
 ### Member 3: [Name]
