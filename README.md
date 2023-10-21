@@ -7,11 +7,11 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
 ### Member 1: [Name]
 - **GitHub:** [GitHub Profile](URL)
 - **Why I'am Doing the Course:** *I believe...*
-- **Favorite Topic:** <span style="color: #c5a2c9;">***Machine Learning***</span> - *We love exploring the endless possibilities.*
-- **Favorite Food:** *Sushi* 🍣 *Ice Cream* 🍦 *Chips* 🍟 
+- **Favorite Topic:** <span style="color: #c5a2c9;"> ***example***</span> - *Reason*
+- **Favorite Food:** 
 
 ### Member 2: [Nasra Hussein]
-- **GitHub:** [Nasra Hussein] (https://github.com/NasraHussein3)
+- **GitHub:** [Nasra Hussein](https://github.com/NasraHussein3)
 - **Why I'am Doing the Course:** *I love everything Front-end web development and I know CFG will help me excelle in this*
 - **Favorite Topic:** <span style="color: #c5a2c9;">***Javascript***</span> - 
 - **Favorite Food:** *Concrete cake with custard*
@@ -19,26 +19,26 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
 ### Member 3: [Name]
 - **GitHub:** [GitHub Profile](URL)
 - **Why I'am Doing the Course:** *Because...*
-- **Favorite Topic:** <span style="color: #c5a2c9;">
+- **Favorite Topic:** ***example***</span> - *Reason*
 - **Favorite Food:**
 
 ### Member 4: [Name]
 - **GitHub:** [GitHub Profile](URL)
 - **Why I'am Doing the Course:** *...*
-- **Favorite Topic:** <span style="color: #c5a2c9;">
+- **Favorite Topic:** ***example***</span> - *Reason*
 - **Favorite Food:** 
 
 ### Member 5: [Name]
 - **GitHub:** [GitHub Profile](URL)
 - **Why I'am Doing the Course:** *I believe...*
-- **Favorite Topic:** <span style="color: #c5a2c9;">
+- **Favorite Topic:** ***example***</span> - *Reason*
 - **Favorite Food:**
 
-### Member 6: [Name]
-- **GitHub:** [GitHub Profile](URL)
+### Member 6: [Remi - Rongrong]
+- **GitHub:** [@Sherlkk](https://github.com/sherlkk)
 - **Why I'am Doing the Course:** *I'm...*
-- **Favorite Topic:** <span style="color: #c5a2c9;">
-- **Favorite Food:** 
+- **Favorite Topic:** ***Machine Learning***</span> - *We love exploring the endless possibilities.*
+- **Favorite Food:** *Potato* :U+1F954: *Ice Cream* :U+1F368: *Chips* :U+1F35F: 
 
 ## Our Focus
 
@@ -50,4 +50,3 @@ As a team, we are dedicated to becoming full-stack developers. Our journey encom
 
 We are not just dreamers; we are doers. Together, we transform our coding dreams into reality!
 
-Feel free to adjust the colors and other details in your README.md to make it more readable and eye-catching. In this example, I used a reddish-orange color for the team name and topic highlights.
