@@ -12,7 +12,7 @@ Welcome to the <span style="color: #c5a2c9;">**Dream**</span> team's README! We 
 
 ### Member 2: [Nasra Hussein]
 - **GitHub:** [Nasra Hussein] (https://github.com/NasraHussein3)
-- **Why I'am Doing the Course:** *I love everything Front-end web development and I know CFG will help me excelle in this *
+- **Why I'am Doing the Course:***I love everything Front-end web development and I know CFG will help me excelle in this*
 - **Favorite Topic:** <span style="color: #c5a2c9;">***Javascript***</span> - 
 - **Favorite Food:** *Concrete cake with custard*
 
