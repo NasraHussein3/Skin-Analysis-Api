@@ -7,7 +7,7 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
 - **Name**
   - :octocat: **GitHub:** [@Minka-27](https://github.com/Minka-27)
   - :thought_balloon: **Why I'm doing the course:** *I was looking to switch into tech and I thought doing a nanodegree with CFG was a great way to start*
-  - :star2: **Favorite Topic:** ***Wireframing/Web Dev*** - *Reason: I love the process of building a website from the ground up. My favourite assignment involved working with HTML, CSS and JS to build a website*
+  - :star2: **Favorite Topic:** ***Wireframing/Web Dev*** - I love the process of building a website from the ground up. My favourite assignment involved working with HTML, CSS and JS to build a website*
   - :plate_with_cutlery: **Favorite Food:** *Jollof rice, 10/10 comfort food*
 
 - **Nasra Hussein**
