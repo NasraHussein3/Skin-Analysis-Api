@@ -51,5 +51,34 @@ As a team, we are dedicated to becoming full-stack developers. Our journey encom
 We are not just dreamers; we are doers. Together, we transform our coding dreams into reality!
 
 
+# Connecting API to Database
+
+## This code connects to the MySQL database called Skincare. It performs various database operations, and defines several functions for querying, managing and deleting data. 
+
+## Here we will break down what is happening through the code.
+
+### First we import mysql.connector which is a module and is used to interact with the MySQL database ‘Skincare’.
+
+### Next we put from config import USER, PASSWORD, HOST: which imports the USER, PASSWORD, and HOST constants from the config.py module, which contain the database credentials.
+
+### class DbConnectionError(Exception): is used as it can be raised if there is an issue connecting to the database.
+
+### _connect_to_db(db_name): Our first function connects us to the database. It takes the database name as an argument and establishes a connection to the MySQL database using the credentials imported from config. It then returns the database connection object.
+
+### get_skin_type(user): This function retrieves the skin type information for a user with the given first name. It first connects to the database using _connect_to_db. Then, it constructs and executes a SQL query to fetch the skin type based on the user's first name. It prints the results and closes the cursor and database connection.
+
+### get_skin_routine(user): This function retrieves the skincare routine for a user based on their skin type. It constructs a SQL query and prints the results.
+
+### search_name(user, skincare): This function retrieves the skin type information from the database and filters a list of skincare information by matching the user's first name and returns the filtered results.
+
+### get_all_skincare(): This function connects to the database, executes a multi-statement SQL query to fetch data from multiple tables (Results, Users, SkinInfo), and prints the results.
+
+### skin_profiles(): This function retrieves skin information by performing an SQL INNER JOIN operation between the SkinInfo and Results tables. It then prints the results, including skin info, recommended routine, and medication required.
+
+### delete_user_reesults(user): This function deletes a user's results from the "SkinInfo” table and reset the user's data in the "Users" table.
+
+### if __name__ == '__main__':: This is the starting point of the script when it's executed as the main program.
+
+### get_all_skincare(): When the script is run, it calls the get_all_skincare function, which retrieves and prints data from the database.
 
 
