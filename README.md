@@ -24,7 +24,7 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
 
 - **Lauren Southall**
   - :octocat: **GitHub:** [@Lor9538](URL)
-  - :thought_balloon: **Why I'm doing the course:** *I'm fascinated by the dynamic and diverse world of technology, and its ability to inspire creativity and innovation, enabling the transformation of groundbreaking concepts into tangible realities. *
+  - :thought_balloon: **Why I'm doing the course:** *I'm fascinated by the dynamic and diverse world of technology, and its ability to inspire creativity and innovation, enabling the transformation of groundbreaking concepts into tangible realities. **
   - :star2: **Favorite Topic:** ***UX/UI design*** - *it's a journey of transformation, turning ideas into interfaces and concepts reality. It's the magic of making technology not just powerful but also beautiful, making the digital world a better place one design at a time.*
   - :plate_with_cutlery: **Favorite Food:** *Koldskål med Kammerjunker, it's the perfect treat on a hot summers day!* :bowl_with_spoon:
 
