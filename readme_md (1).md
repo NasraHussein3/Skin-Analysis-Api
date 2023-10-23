@@ -4,7 +4,7 @@
 
 Welcome to the Skin Analysis API – your personal skincare companion, offering customized regimens tailored to your unique skin type. We base our recommendations on The Ordinary skincare products to help you achieve healthy and radiant skin.
 
-**To see the API code/files, please click on the Master Branch of this repo**
+## **To see the API code/files, please click on the Master Branch of this repo**
 
 
 In the development of this API, we used the following tools:
