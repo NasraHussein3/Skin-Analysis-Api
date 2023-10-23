@@ -28,11 +28,11 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
   - :star2: **Favorite Topic:** ***UX/UI design*** - *it's a journey of transformation, turning ideas into interfaces and concepts reality. It's the magic of making technology not just powerful but also beautiful, making the digital world a better place one design at a time.*
   - :plate_with_cutlery: **Favorite Food:** *Koldskål med Kammerjunker, it's the perfect treat on a hot summers day!* :bowl_with_spoon:
 
-- **Name**
-  - :octocat: **GitHub:** [GitHub Profile](URL)
-  - :thought_balloon: **Why I'm doing the course:** *I believe...*
-  - :star2: **Favorite Topic:** ***example*** - *Reason*
-  - :plate_with_cutlery: **Favorite Food:**
+- **Jessica John-Palmer**
+  - :octocat: **GitHub:** [@Jessica257](https://github.com/Jessica257)
+  - :thought_balloon: **Why I'm doing the course:** *I wanted to to switch careers and do something I enjoy and also find challenging. Learning the fundamentels of web development has been very interesting and enjoyable*
+  - :star2: **Favorite Topic:** ***Web development*** - *I beleive this is where I am able to be most creative*
+  - :plate_with_cutlery: **Favorite Food:** *brown stew chicken and white rice*
 
 - **Remi - Rongrong**
   - :octocat: **GitHub:** [@sherlkk](https://github.com/sherlkk)
