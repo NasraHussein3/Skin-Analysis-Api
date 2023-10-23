@@ -17,7 +17,7 @@ def _connect_to_db(db_name):
     )
     return cnx
 
-# Have created 6 Functions including a delete function.
+# Have created 6 Functions including a delete function..ls
 # Each funtion retrieves information for the user from the skincare database using a SQL query and prints the results
 def get_skin_type(user):
     try:
