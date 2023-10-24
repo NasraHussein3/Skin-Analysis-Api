@@ -155,6 +155,7 @@ We collaborated by sharing examples of our desired end result and the specific d
 ![sc db Lauren & Jessica](Skincare%20database%203.2%20Lauren%20and%20Jessica.png)
 ![sc db Lauren & Jessica](Skincare%20database%203.3%20Lauren%20and%20Jessica.png)
 
+# Project breakdown
 ## Main.py
 
 - ### First we import the requests and json modules.
