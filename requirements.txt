@@ -1,0 +1,8 @@
+A requirements.txt file is commonly used in Python projects to specify the dependencies and their respective versions required for the project to run. This file is particularly essential when working with Python package management tools like pip and virtualenv. Tools like pip can read the requirements.txt file and automatically install all the specified packages and versions with a single command, making it simple to set up the project environment.
+
+Examples:
+requests==2.26.0
+numpy==1.21.3
+pandas==1.3.4
+matplotlib==3.4.3
+
