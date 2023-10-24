@@ -82,3 +82,20 @@ We are not just dreamers; we are doers. Together, we transform our coding dreams
 ### get_all_skincare(): When the script is run, it calls the get_all_skincare function, which retrieves and prints data from the database.
 
 
+# Main.py
+
+## The main.py interacts with the client side API for skincare-related data. It provides a command-line interface for users to perform the following actions:
+
+### get_skincare_routine(): This function allows the user to retrieve a skincare routine by providing their skin type as input. The script sends a POST request to the specified API endpoint (/skincare/skincare) with the user's input, and if the response status code is 200 (OK), it prints the skin type and skincare routine.
+
+### list_skin_types(): This function lists available skin types. It sends a GET request to the /skin_types endpoint, and if the response status code is 200, it prints the available skin types.
+
+### delete_all_skincare_data(): This function is used to delete all skincare data. It sends a DELETE request to the /skincare_data endpoint. If the response status code is 200, it confirms that all skincare data has been deleted.
+
+### The script runs in a loop, displaying a menu of options for the user. The user can select an option by entering the corresponding number. The available options are to get a skincare routine, list available skin types, delete all skincare data, or exit the script.
+
+### The script relies on the requests library to make HTTP requests to the Flask API. It interacts with the API by sending different types of requests (POST, GET, DELETE) to specific endpoints, and it processes the API responses accordingly.
+
+### This shows how to interact with the skincare API and perform essential actions related to skincare data management.
+
+

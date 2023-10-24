@@ -1,7 +1,7 @@
 import requests
 
-# Define the base URL for your Flask API
-base_url = 'http://localhost:5000'  # Replace with the actual URL of your API
+# Define the URL for Flask API
+base_url = 'http://127.0.0.1:5000/skincare'
 
 
 # Function to get skincare routine by skin type
