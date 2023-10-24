@@ -17,7 +17,7 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
   - :plate_with_cutlery: **Favorite Food:** *Concrete cake with custard*
 
 - **Mimi Brown**
-  - :octocat: **GitHub:** [Mimi Brown](https://github.com/MimiCode21)
+  - :octocat: **GitHub:** [@MimiCode21](https://github.com/MimiCode21)
   - :thought_balloon: **Why I'm doing the course:** *I wanted a career change and was introduced to cfg and thought it was such an amazing opportunity and the rest is history.*
   - :star2: **Favorite Topic:** *My favourite topic is web development. -  love the creative aspect of building a website and seeing all that code coming to life in front of your eyes.*
   - :plate_with_cutlery: **Favorite Food:** *Caribbean, specifically Jamaican it’s just unmatched 😋*
