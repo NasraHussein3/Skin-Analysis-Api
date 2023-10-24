@@ -155,13 +155,6 @@ We collaborated by sharing examples of our desired end result and the specific d
 ![sc db Lauren & Jessica](Skincare%20database%203.2%20Lauren%20and%20Jessica.png)
 ![sc db Lauren & Jessica](Skincare%20database%203.3%20Lauren%20and%20Jessica.png)
 
-
-## Connecting API to Database
-
-## Project breakdown
-
-
-## Break down of code in Pycharm
 ## Main.py
 
 - ### First we import the requests and json modules.
