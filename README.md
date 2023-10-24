@@ -7,7 +7,7 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
 - **Name**
   - :octocat: **GitHub:** [@Minka-27](https://github.com/Minka-27)
   - :thought_balloon: **Why I'm doing the course:** *I was looking to switch into tech and I thought doing a nanodegree with CFG was a great way to start*
-  - :star2: **Favorite Topic:** ***Wireframing/Web Dev*** - I love the process of building a website from the ground up. My favourite assignment involved working with HTML, CSS and JS to build a website*
+  - :star2: **Favorite Topic:** ***Wireframing/Web Dev*** *- I love the process of building a website from the ground up. My favourite assignment involved working with HTML, CSS and JS to build a website*
   - :plate_with_cutlery: **Favorite Food:** *Jollof rice, 10/10 comfort food*
 
 - **Nasra Hussein**
@@ -18,15 +18,15 @@ Welcome to the **Dream** team's README! We are a group of six enthusiastic girls
 
 - **Mimi Brown**
   - :octocat: **GitHub:** [Mimi Brown](https://github.com/MimiCode21)
-  - :thought_balloon: **Why I'm doing the course:** I wanted a career change and was introduced to cfg and thought it was such an amazing opportunity and the rest is history.
-  - :star2: **Favorite Topic:My favourite topic is web development. -  love the creative aspect of building a website and seeing all that code coming to life in front of your eyes.
-  - :plate_with_cutlery: **Favorite Food: Caribbean, specifically Jamaican it’s just unmatched 😋
+  - :thought_balloon: **Why I'm doing the course:** *I wanted a career change and was introduced to cfg and thought it was such an amazing opportunity and the rest is history.*
+  - :star2: **Favorite Topic:** *My favourite topic is web development. -  love the creative aspect of building a website and seeing all that code coming to life in front of your eyes.*
+  - :plate_with_cutlery: **Favorite Food:** *Caribbean, specifically Jamaican it’s just unmatched 😋*
 
 - **Lauren Southall**
   - :octocat: **GitHub:** [@Lor9538](URL)
-  - :thought_balloon: **Why I'm doing the course:** *I'm fascinated by the dynamic and diverse world of technology, and its ability to inspire creativity and innovation, enabling the transformation of groundbreaking concepts into tangible realities. *
+  - :thought_balloon: **Why I'm doing the course:** *I'm fascinated by the dynamic and diverse world of technology, and its ability to inspire creativity and innovation, enabling the transformation of groundbreaking concepts into tangible realities.*
   - :star2: **Favorite Topic:** ***UX/UI design*** - *it's a journey of transformation, turning ideas into interfaces and concepts reality. It's the magic of making technology not just powerful but also beautiful, making the digital world a better place one design at a time.*
-  - :plate_with_cutlery: **Favorite Food:** *Koldskål med Kammerjunker, it's the perfect treat on a hot summers day!* :bowl_with_spoon:
+  - :plate_with_cutlery: **Favorite Food:** ***Koldskål med Kammerjunker*** *it's the perfect treat on a hot summers day!* :bowl_with_spoon:
 
 - **Jessica John-Palmer**
   - :octocat: **GitHub:** [@Jessica257](https://github.com/Jessica257)
