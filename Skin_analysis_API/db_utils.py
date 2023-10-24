@@ -1,211 +1,118 @@
-# Import modules and credentials
 import mysql.connector
 from config import USER, PASSWORD, HOST
 
-# This is a custom exception class that is raised if there is an issue with the database
 class DbConnectionError(Exception):
     pass
 
-# Created a function to establish a connection to the database using credentials from config.py
-def _connect_to_db(db_name):
-    cnx = mysql.connector.connect(
-        host=HOST,
-        user=USER,
-        password=PASSWORD,
-        auth_plugin='mysql_native_password',
-        database=db_name
-    )
-    return cnx
-
-# Have created 6 Functions including a delete function.
-# Each funtion retrieves information for the user from the skincare database using a SQL query and prints the results
-def get_skin_type(user):
+def get_skintype_list():
     try:
-        db_name = 'skincare'
-        db_connection = _connect_to_db(db_name)
-        cur = db_connection.cursor()
-        print("Connected to DB: {}\n".format(db_name))
+        # Establish a connection to the MySQL database
+        db_connection = mysql.connector.connect(
+            user=USER,
+            password=PASSWORD,
+            host=HOST,
+            database="skincareme"
+        )
+        cursor = db_connection.cursor()
 
-        query = """SELECT Skin_info FROM SkinInfo WHERE SkinInfoID IN(
-            SELECT SkinInfoID FROM Users WHERE FirstName = '{}')""".format(user)
+        # Execute a query to fetch all skin types from the 'SkinType' column
+        cursor.execute("SELECT DISTINCT SkinType FROM dailyroutine")
+        skintypes = [row[0] for row in cursor.fetchall()]
 
-        cur.execute(query)
-        result = cur.fetchall()
-        skin_type = result
+        return skintypes
 
-        for i in result:
-            print(i)
-        cur.close()
+    except mysql.connector.Error as err:
+        raise DbConnectionError(f"Failed to read data from DB: {err}")
 
-    # Using mysql exception to make a more specific exception to help with troubleshooting issues
-    except mysql.connector.Error as e:
-        raise DbConnectionError("Failed to connect to DB: {e}")
-
-    else:
-        if db_connection:
+    finally:
+        if 'db_connection' in locals():
             db_connection.close()
-            print('\nDB connection is closed\n')
+            print("DB connection is closed")
 
-
-def get_skin_routine(user):
+def get_daily_routine(skintype):
     try:
-        db_name = 'skincare'
-        db_connection = _connect_to_db(db_name)
-        cur = db_connection.cursor()
-        print("Connected to DB: {}\n".format(db_name))
+        db_connection = mysql.connector.connect(
+            user=USER,
+            password=PASSWORD,
+            host=HOST,
+            database="skincareme"
+        )
+        cursor = db_connection.cursor()
 
-        query = """ SELECT Skincare_routine FROM Results WHERE ResultsID IN(
-        SELECT ResultsID FROM Users WHERE UserID In(
-        SELECT UserID FROM UserInfo WHERE Skin_type = '{}'))""".format(user)
+        # Execute a query to fetch the daily routine based on the skin type
+        cursor.execute("SELECT * FROM dailyroutine WHERE SkinType = %s", (skintype,))
+        daily_routine = cursor.fetchone()
 
-        cur.execute(query)
-        result = cur.fetchall()
-        skin_type = result
+        return daily_routine
 
-        for i in result:
-            print(i)
-        cur.close()
+    except mysql.connector.Error as err:
+        raise DbConnectionError(f"Failed to read data from DB: {err}")
 
-    except Exception:
-        raise DbConnectionError("Failed to connect to DB")
-    else:
-        if db_connection:
+    finally:
+        if 'db_connection' in locals():
             db_connection.close()
-            print('\nDB connection is closed\n')
+            print("DB connection is closed")
 
-            return result
-
-
-def search_name(user, skincare):
+def add_member(FirstName, LastName, Email, SkinType, Age):
     try:
-        db_name = 'skincare'
-        db_connection = _connect_to_db(db_name)
-        cur = db_connection.cursor()
-        print("Connected to DB: {}\n".format(db_name))
+        db_connection = mysql.connector.connect(
+            user=USER,
+            password=PASSWORD,
+            host=HOST,
+            database="skincareme"
+        )
+        cursor = db_connection.cursor()
 
-        query = """SELECT Skin_type FROM SkinInfo WHERE UserID IN(
-        SELECT UserID FROM Users WHERE FirstName = '{}')""".format(user)
-
-        cur.execute(query)
-        result = cur.fetchall()
-        skin_type = result
-
-        for i in result:
-            print(i)
-        cur.close()
-
-    except Exception:
-        raise DbConnectionError("Failed to connect to DB")
-    else:
-        if db_connection:
-            db_connection.close()
-            print('\nDB connection is closed\n')
-
-    return [element for element in skincare if element['FirstName'] == user]
-
-
-def get_all_skincare():
-    try:
-        db_name = 'skincare'
-        db_connection = _connect_to_db(db_name)
-        cur = db_connection.cursor()
-        print("Connected to DB: {}\n".format(db_name))
-
-        query = """
-        SELECT * FROM Results;
-        SELECT * FROM Users;
-        SELECT * FROM SkinInfo;
-        """
-
-        cur.execute(query)
-        result = cur.fetchall()
-        skin_type = result
-
-        for i in result:
-            print(i)
-        cur.close()
-
-    except Exception:
-        raise DbConnectionError("Failed to connect to DB")
-    else:
-        if db_connection:
-            db_connection.close()
-            print('\nDB connection is closed\n')
-
-            return result
-
-
-def skin_profiles():
-    try:
-        db_name = 'skincare'
-        db_connection = _connect_to_db(db_name)
-        cur = db_connection.cursor()
-        print("Connected to DB: {}\n".format(db_name))
-
-        query = """
-        SELECT *
-        SkinInfo.Skin_Info AS "Skin Info",
-        Results.Recommended_products AS "Recommended Routine",
-        SkinInfo.Medication AS "Medication Required"
-        FROM
-        SkinInfo
-        INNER JOIN
-        Results ON SkinInfo.ResultsID = Results.ResultsID;
-        """
-
-        cur.execute(query)
-        result = cur.fetchall()
-
-        # iterate over the result and print info from each row
-        for row in result:
-            # prints the 1st element (index 0) in each row related to skin info.
-            print("Skin Info:", row[0])
-            # prints 2nd element (index 1) in each row related to a recommended skincare routine.
-            print("Recommended Routine:", row[1])
-            # prints 3rd element (index 2) related to medication requirements.
-            print("Medication Required:", row[2])
-
-        cur.close()
-
-    except Exception:
-        raise DbConnectionError("Failed to connect to DB")
-    else:
-        if db_connection:
-            db_connection.close()
-            print('\nDB connection is closed\n')
-
-            return result
-
-
-def delete_user_results(user):
-    try:
-        db_name = 'skincare'
-        db_connection = _connect_to_db(db_name)
-        cur = db_connection.cursor()
-        print("Connected to DB: {}\n".format(db_name))
-
-        # delete the user's results from the results table
-        delete_results_query = ("DELETE FROM Results WHERE Skin_info_ID IN (SELECT SkinInfoID "
-                                "FROM SkinInfo WHERE Skin_info = %s")
-        cur.execute(delete_results_query, (user,))
-
-        # Reset the user's data in the Users table
-        reset_user_query = "UPDATE Users SET ResultsID = NULL, SkinInfoID = NULL WHERE FirstName = %s"
-        cur.execute(reset_user_query, (user,))
-
-        # commit the changes
+        # Remove the "ID" field from the insert query since it's auto-incremented
+        insert_query = "INSERT INTO members (FirstName, LastName, Email, SkinType, Age) VALUES (%s, %s, %s, %s, %s)"
+        data_to_insert = (FirstName, LastName, Email, SkinType, Age)
+        cursor.execute(insert_query, data_to_insert)
         db_connection.commit()
-        print("Deleted results for {user} and reset the user data.")
 
-    except Exception:
-        raise DbConnectionError("Failed to connect to DB")
-    else:
-        if db_connection:
+    except mysql.connector.Error as err:
+        raise DbConnectionError(f"Failed to write data to DB: {err}")
+
+    finally:
+        if 'db_connection' in locals():
             db_connection.close()
-            print('\nDB connection is closed\n')
+            print("DB connection is closed")
+def delete_member_by_email(email):
+    try:
+        # Establish a database connection
+        db_connection = mysql.connector.connect(
+            host=HOST,
+            user=USER,
+            password=PASSWORD,
+            database="skincareme"
+        )
 
+        # Create a cursor object to execute SQL queries
+        cursor = db_connection.cursor()
+
+        # Define the SQL query to delete a member by email
+        delete_query = "DELETE FROM members WHERE Email = %s"
+        cursor.execute(delete_query, (email,))
+
+        # Commit the changes and close the cursor and connection
+        db_connection.commit()
+        cursor.close()
+        db_connection.close()
+
+    except Exception as e:
+        raise DbConnectionError("Failed to delete member")
+
+    return "Member deleted successfully"
 
 if __name__ == '__main__':
-    get_all_skincare()
-    # user_to_delete = "user name"
-    # delete_user_results(user_to_delete)
+    # Test the functions
+    skintypes = get_skintype_list()
+    print("Skin Types:", skintypes)
+
+    skin_type = "Oily skin"
+    daily_routine = get_daily_routine(skin_type)
+    print(f"Daily Routine for {skin_type}:", daily_routine)
+
+    add_member("Test", "Test", "test@email.com", "Oily skin", 100)
+    print("Member added successfully")
+
+    delete_member_by_email('bb')

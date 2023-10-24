@@ -1,55 +1,53 @@
 from flask import Flask, jsonify, request
-import skincare_data
-from skincare_data import skincare_data
+from db_utils import get_skintype_list, get_daily_routine, add_member, delete_member_by_email
 
 app = Flask(__name__)
 
-# HERE BELOW ARE THE API END POINTS FOR THE SKIN ANALYSIS API
-#First end point gets all skincare data
+# GETTING ALL SKIN TYPES
+@app.route('/skintype')
+def get_skintype():
+    res = get_skintype_list()
+    return jsonify(res)
 
-@app.route('/skincare')
-def get_skincare():
-    return jsonify(skincare_data)
+# GETTING THE DAILY ROUTINE FOR A SPECIFIC SKIN TYPE
+@app.route('/daily-routine/<skintype>')
+def get_dailyroutine(skintype):
+    res = get_daily_routine(skintype)
+    return jsonify(res)
 
-#Second end point is to select skin type and receive skincare routine using API POST method
+# ADDING A NEW MEMBER
+@app.route('/members', methods=['POST'])
+def new_member():
+    data = request.json
+    ID = data.get("ID")
+    FirstName = data.get("FirstName")
+    LastName = data.get("LastName")
+    Email = data.get("Email")
+    SkinType = data.get("SkinType")
+    Age = data.get("Age")
 
-@app.route('/skincare', methods=['POST'])
-def get_skincare_routine():
-    data = request.get_json() # This part extracts the JSON data from the incoming POST request(user input)
-    skin_type = data.get("skin_type")  # This part always makes sure there is an input from the user
-    if skin_type in skincare_data:
-        routine = skincare_data.get(skin_type) # This looks up the skin care routine from the skincare dictionary associated with the skin type
-        return jsonify({"skin_type": skin_type, "skincare_routine": routine}) # This gives the user a JSON response which shows them the skin routine for their selected skin type.
-    else:
-        return jsonify({"error": "Invalid Skin type. Please Choose from the available options "}), 400
-# Even through users will only have option of 6 skin types; basic error handling is good to have in an API
+    if not FirstName or not LastName or not Email or not SkinType or not Age:
+        return jsonify({"error": "Missing required data"}), 400
 
+    try:
+        add_member(FirstName, LastName, Email, SkinType, Age)
+        return jsonify({"message": "Member added successfully"}), 201
 
-# Third Endpoint is to list all available skin types using API GET method
-# We need to check if there are any skin types available and dict isnt empty then we produce a message that states whats available
-# The available skin types are joined into a comma-separated string
-# If the list is empty then we get another message.
-@app.route('/skin_types', methods=['GET'])
-def list_skin_types():
-    skin_types = list(skincare_data.keys())
-    if skin_types:
-        message = "Available skin types are: " + ", ".join(skin_types)
-        return jsonify({"message": message, "skin_types": skin_types})
-    else:
-        return jsonify({"message": "No skin types available"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
+# DELETING A MEMBER BASED ON EMAIL ADDRESS
+@app.route('/members/<email>', methods=['DELETE'])
+def delete_member(email):
+    try:
+        # Call a function to delete a member by email from db_utils.py
+        delete_member_by_email(email)  # You need to implement this function in db_utils.py
 
-# Fourth Endpoint deletes all skincare data using the DELETE method
-# Here we use the keyword Global, so we can access skincare_data outside of this function and able to delete data.
-# the {} indicates the dictionary has been emptied out
-# the result will be the Key Message with Value All Skincare data has been deleted.
-@app.route('/skincare_data', methods=['DELETE'])
-def delete_all_skincare_data():
-    global skincare_data
-    skincare_data = {}
-    return jsonify({"message": "All skincare data has been deleted"})
+        # Assuming delete_member_by_email returns a success message on successful deletion
+        return jsonify({"message": "Member deleted successfully"}), 200
 
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
+if __name__ == '__main__':
+    app.run(debug=True, port=5001)
